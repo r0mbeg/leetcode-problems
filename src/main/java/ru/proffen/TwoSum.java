@@ -1,5 +1,7 @@
 package ru.proffen;
 
+//Leetcode 1. Two Sum
+
 public class TwoSum {
 
         public int[] twoSum(int[] nums, int target) {

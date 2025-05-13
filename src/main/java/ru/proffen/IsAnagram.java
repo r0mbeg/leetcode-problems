@@ -4,7 +4,6 @@ package ru.proffen;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class IsAnagram {
     public static boolean isAnagram(String s, String t) {
