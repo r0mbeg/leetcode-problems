@@ -17,7 +17,9 @@ public class TopKFrequent {
 
         List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(map.entrySet());
 
-        entries.sort((e1, e2) -> e2.getValue().compareTo(e1.getValue()));
+        //сортировка по убыванию частоты
+        entries.sort((a, b) -> b.getValue() - a.getValue());
+
 
 
         int[] res = new int[k];
