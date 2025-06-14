@@ -4,7 +4,7 @@ package ru.proffen.easy;
 //LeetCode 69. Sqrt(x)
 public class _0069_SqrtX {
 
-    public static int mySqrt(int x) {
+    public int mySqrt(int x) {
 
         long left = 0;
         long right = x;
@@ -26,16 +26,6 @@ public class _0069_SqrtX {
         }
 
         return (int)result;
-    }
-
-
-
-
-
-
-
-    public static void main(String[] args) {
-        System.out.println(mySqrt(2147395599));
     }
 
 }
