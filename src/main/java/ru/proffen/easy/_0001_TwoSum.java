@@ -12,7 +12,7 @@ public class _0001_TwoSum {
                     if (nums[i] + nums[j] == target) {
                         sol[0] = i;
                         sol[1] = j;
-                        break;
+                        return sol;
                     }
                 }
             }
