@@ -2,22 +2,15 @@ package ru.proffen.easy;
 
 public class _0125_ValidPalindrome {
     public static boolean isPalindrome(String s) {
-        if (s == null || s.isEmpty()) {
-            return true;
-        }
+        int n = s.length();
 
-        s = s.toLowerCase();
-        s = s.replaceAll("[^\\p{L}\\p{N}]", "");
+        return switch (n) {
+            case 1 -> true;
+            case 2 -> s.charAt(0) == s.charAt(1);
+            case 3 -> s.charAt(0) == s.charAt(2);
+            default -> s.charAt(0) == s.charAt(n - 1) && isPalindrome(s.substring(1, n - 2));
+        };
 
-
-        for (int i = 0; i < s.length() / 2; i++) {
-            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
-                return false;
-            }
-
-        }
-
-        return true;
     }
 
 
